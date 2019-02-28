@@ -3,7 +3,7 @@
 }
 .navigation{
     text-transform: uppercase;
-    font-size: 9.61px;
+    font-size: 7.21379pt;
 }
 .header{
     width: 1020;
@@ -11,15 +11,19 @@
     background-color: #323232;
 }
 .menu{
+    
 
 }
 .item{
+   
 
 }
 .info{
+    background-color: #323232;
 
 }
 .hexagon-container{
+    background-color: #ffffff;
 
 }
 .in-touch-form{
@@ -29,5 +33,81 @@
 
 }
 .button-submit{
-    background-color: red;
+    background-color: #2eb398;
+} 
+ .blog-text{
+    background-color: #2eb398;
 }
+.article h3,p{
+    
+}
+.subtitle{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+}
+.hex1{
+
+}
+.input-text:invalid{
+    border: 1px solid red;
+
+}
+.hexagon{
+    width: 180px;
+    height: 210px;
+    margin: 5px;
+    transform: rotate(120deg);
+    overflow:hidden;
+    visibility: hidden;
+    display: inline-block;
+}
+    .hex-layer1{
+        width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    overflow: hidden;
+    visibility: hidden;
+
+    }
+    .hex-layer2{
+        width: 100%;
+    height: 100%;
+    background-color: #697a7766;
+    transform: rotate(-60deg);
+    visibility: visible;
+    background-image: url(../img/hex1.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+    }
+    .hexagon:hover{
+        transform: rotate(60deg);
+        transition: transform 2s cubic-bezier(1, 0, 0, 1);
+    }
+    .author{
+        width: 180px;
+        height: 210px;
+        margin: 5px;
+        transform: rotate(120deg);
+        overflow:hidden;
+        visibility: hidden;
+        display: inline-block;
+    }
+        .hex-layer3{
+            width: 100%;
+        height: 100%;
+        transform: rotate(-60deg);
+        overflow: hidden;
+        visibility: hidden;
+    
+        }
+        .hex-layer4{
+            width: 100%;
+        height: 100%;
+        background-color: #697a7766;
+        transform: rotate(-60deg);
+        visibility: visible;
+        background-image: url(../img/author.png);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        }
