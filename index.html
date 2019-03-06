@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="asset/style/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style/animation.css" type="text/css" />
+<link rel="stylesheet" href="/style/fontello.css" type="text/css" />
+<link rel="stylesheet" href="/style/fontello-codes.css" type="text/css" />
+<link rel="stylesheet" href="/style/fontello-embedded.css" type="text/css" />
+<link rel="stylesheet" href="/style/fontello-ie7.css" type="text/css" />
+<link rel="stylesheet" href="/style/fontello-ie7-codes.css" type="text/css" />
     <title>Hexal</title>
 </head>
 <body>
+       
+  
     <header class="header">
-        <div class="logo"><img src="asset/img/Logo.png"></div>
+        <div class="logo"><img src="asset/img/Logo.png" alt="logo"></div>
        <nav class="navigation">
                 <ul class="menu">
                     <li class="item"><a class="link-portfolio" href="#portfolio">portfolio</a></li>
@@ -17,8 +25,7 @@
                     <li class="item"><a class="link-blog" href="#blog-text">blog</a></li>
                     <li class="item"><a class="link-form" href="#info">get in touch</a></li>
                 </ul>
-            </nav></div>
-            
+            </nav>
     </header> 
         <main class="main">
             <section class="hexagon-container" id="portfolio">
@@ -51,34 +58,54 @@
 
             </section>
             <section class="blog-text" id="blog-text">
+                <div class="left-line-blog"></div>
+                <div class="right-line-blog"></div>
             <div class="author"> <div class="author-layer1"><div class="author-layer2"></div></div></div>
               <article class="article">
-                  <p class="subtitle">Smith Anderson<br>
+                  <p class="subtitle">Smith Anderson</p>
                     <p class="author-position">Illustrator & Character Designer</p>
                    <p class="about-author"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna<br>
                      pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhon-<br>
                      cus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at<br>
                       sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna</p>
-                      <div class="contacts"><img src="asset/img/Facebook.png"><img src="asset/img/Twitter.png"><img src="asset/img/Google.png"> <img src="asset/img/Pinterest.png"><img src="asset/img/Linkedin.png"><img src="asset/img/Dribbble.png"></div>
+                      <div class="social"><a href="https://www.facebook.com/" class="icon-facebook"></a>
+                      <a href="https://twitter.com/" class="icon-twitter"></a>
+                      <a href="https://plus.google.com/"  class="icon-gplus" ></a>
+                      <a href="https://www.pinterest.es/"  class="icon-pinterest-1" ></a>
+                      <a href="https://www.linkedin.com/"  class="icon-linkedin"></a>
+                      <a href="https://dribbble.com/"  class="icon-dribbble"></i></a></div>
                      
               </article>  
             </section>
 
             <footer class="info" id="info">
-                <form action="#" method="post" class="in-touch-form">
-                    <fieldset>
-                        <legend>Get in touch</legend> 
-                            <input type="text" class="input-text"  placeholder="Name(required)" required>
-                            <input type="email" class="input-text"  placeholder="Email(required)" required>
-                            <input type="text" class="input-text"  placeholder="Subject">
-                            <textarea name="" id="" colls="30" rows="10" placeholder="Write your message here..."></textarea> </textarea>
+                    <div class="some-info"><p><b class="lato-black">Quisque Hendrerit:</b> purus dapi-bus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae.</p></div>
+                    <div class="contacts">
+                        <div class="contacts-text"><p>Elm St. 14/05 Lost City</p>
+                                                   <p>+ 3528 331 86 35</p>  
+                                                   <p>info@hexalcorp.com</p></div>
+                                    
+                        <ul class="contacts-list">
+                            <li><a href="https://www.google.com/maps" class="location"><img src="../img/location.png" alt="location"></a></li>
+                            <li><a href="tel:+35283318635 " class="telnumber"><img src="../img/phone.png" alt="phone"></a></li>
+                            <li><a href="mailto:info@hexalcorp.com" class="mail"><img src="../img/mail.png" alt="email"></a></li>
+                        </ul>
+                    </div>
+                <form action="#" method="post" class="in-touch-form" id="form">
+                    <fieldset class="info-form" form="form">
+                        <legend class="legend">Get In Touch<br>
+                        <span class="legend-in">In order to get in touch use the contact form below:</span></legend> 
+                           <div class="name"><input type="text" class="input-text"  placeholder="     Name(Required)" required></div>
+                            <div class="email"><input type="email" class="input-text"  placeholder="    Email(Required)" required></div>
+                            <div class="subject"><input type="text" class="input-text"  placeholder="    Subject"></div>
+                            <div class="text"><textarea name="textform" id="tex2" class="textarea" cols="30" rows="10" placeholder="     Write your message here..."></textarea></div>
                     </fieldset>
                     <button class="button-submit">Send</button>
                     
                 </form>
-                <div class="copyright"><span>Copyright</span></div>
-            </footer>
 
+            </footer>
+            <div class="copyright"><span class="copy-span">© Copyright 2013 by PSDchat</span></div>
         </main>
     
     
