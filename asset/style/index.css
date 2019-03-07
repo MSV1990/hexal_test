@@ -1,29 +1,29 @@
 @font-face{
     font-family: "Lato-Bold";
     src: url(../fonts/lato/Lato-Bold.ttf) format("truetype");
-    font-weight: normal;
-    font-style: normal;
+    /* font-weight: normal;
+    font-style: normal; */
 
 }  
 @font-face{
-  font-family: "Lato-Regular";
+  font-family: "Lato";
   src: url(../fonts/lato/Lato-Regular.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  /* font-weight: normal;
+  font-style: normal; */
 
 }  
 @font-face{
   font-family: "Lato-Black";
   src: url(../fonts/lato/Lato-Black.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  /* font-weight: normal;
+  font-style: normal; */
 
 }  
 @font-face{
   font-family: "MavenPro-Regular";
   src: url(../fonts/maven-pro/MavenPro-Regular.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  /* font-weight: normal;
+  font-style: normal; */
 }
   @font-face {
     font-family: 'fontello';
@@ -90,7 +90,7 @@
   .icon-pinterest:before { content: '\f312'; } /* '' */
   .icon-linkedin:before { content: '\f318'; } /* '' */
   .icon-dribbble:before { content: '\f31b'; } /* '' */
-}  
+ 
 *{
     margin: 0;
     padding: 0;
@@ -113,7 +113,7 @@ body{
 
 .triangle{
 position: relative;
-margin: 0 auto;
+left: 466px;
 width: 0;
 height: 0;
 border-style: solid;
@@ -125,24 +125,31 @@ border-color: #323232 transparent transparent transparent;
 }
 .item{
     display: inline-block;
+    
+}
+.item a{
+    font-family: "Lato", sans-serif;
+    font-size: 9.6px;
+    font-weight: 400;
+    line-height: 6.32px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
 }
 .link-form{
     text-transform: uppercase;
-    font-family: "Lato-Regular";
-    font-size:7.21379pt;
-    text-decoration: none;
-    color: #ffffff;
-    margin-left: 19px;
+    left: 503px;
+    top: 16px;
+    position: relative;
+    
 
 }
-.link-portfolio{
-   
-    text-decoration: none;
-    margin-left: 327px;
+.link-portfolio{ 
 color: #ffffff;
-font-family: "Lato-Regular";
-font-size: 7.21379pt;
 text-transform: uppercase;
+left: 327px;
+    top: 16px;
+    position: relative;
 }
 .link-portfolio:after{
     content: ".";
@@ -157,18 +164,21 @@ font-size: 7.21379pt;
 
 .link-about{
     text-transform: uppercase;
-    font-size:7.21379pt;
-    text-decoration: none;
     color: #ffffff;
-    margin-left: 20px;
+    left: 347px;
+    top: 16px;
+    position: relative;
+
     
 }
 .link-blog{
     text-transform: uppercase;
-    font-size:7.21379pt;
-    text-decoration: none;
     color: #ffffff;
-    margin-left: 136px;
+    left: 484px;
+    top: 16px;
+    position: relative;
+    
+
 }
 .link-blog:after{
     content: ".";
@@ -196,7 +206,7 @@ font-size: 7.21379pt;
 }
 .navigation{
     position: relative;
-    top:-44px;
+    top: -60px;
 
 }
 
@@ -212,19 +222,18 @@ font-size: 7.21379pt;
     display: block;
     width: 90px;
     height:37px;
-    margin-top: 12px;
-    margin-left: 487px;
+    margin-top: 11px;
+    margin-left: 488px;
     color: #d7fcf5;
-   font-family: Lato-Regular;
-   font-size: 12px;
-font-weight: 700;
+   font-family: "Lato", sans-serif;
+   font-size: 11px;
 line-height: 21.56px;
 text-transform: uppercase;
 } 
  .blog-text{
     background-color: #2eb398;
     height: 341px;
-    /* position:relative; */
+    
 
 }
 .info{
@@ -239,9 +248,8 @@ text-transform: uppercase;
     color: #454545;
     font-family: "MavenPro-Regular"; 
     font-size: 12px;
-    font-weight: 400;
     line-height: 44.32px;
-    margin-left:41px;
+    margin-left:36px;
 }
 
 .hexagon{
@@ -251,7 +259,7 @@ text-transform: uppercase;
     overflow:hidden;
     visibility: hidden;
     display: inline-block;
-    margin-right: 17px;
+    margin-right: 16px;
 }
 
     .hex-layer1{
@@ -304,7 +312,7 @@ text-transform: uppercase;
     visibility: visible;
     background-image: url(../img/hex4.png);
     background-repeat: no-repeat;
-    background-position: 52% 109%;
+    background-position: 47% 109%;
 
     }
     
@@ -442,9 +450,9 @@ text-transform: uppercase;
         overflow:hidden;
         visibility: hidden;
         display: inline-block;
-        margin-left: 120px;
-        margin-top: -564px;
-        position: absolute;
+        top: -564px;
+        left: 123px;
+        position: relative;
     }
         .author-layer1{
             width: 100%;
@@ -469,40 +477,43 @@ text-transform: uppercase;
             transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
         }
         .about-author{
-            margin-left: 321px;
-            margin-top: -504px;
-            position: absolute;
-            font-family: "Lato-Regular";
+            width: 587px;
+    height: 76px;
+            top: -608px;
+            left: 320px;
+            position: relative;
+            font-family: "Lato", sans-serif;
 color: #d7fcf5;
 font-size: 12px;
-font-weight: 400;
 line-height: 21.56px;
         }
         .subtitle{
            font-family: "MavenPro-Regular";
            color: #d7fcf5;
            font-size: 30px;
-           font-weight: 400;
            line-height: 4.56px;
-           position: absolute;
-           margin-left: 319px;
-           margin-top: -587px;
+           position: relative;
+           top: -633px;
+    left: 319px;
         }
         .author-position{
             font-family: "MavenPro-Regular";
             color: #20816d;
 font-size: 18px;
-font-weight: 400;
 line-height: 21.56px;
-position: absolute;
-margin-left: 320px;
-margin-top: -538px;
+position: relative;
+top: -620px;
+    left: 320px
         }
+.article{
+    position: relative;
+    top: -133px;
+    left:0px;
+}
         .legend-in{
             color: #bebebe;
             font-family: "MavenPro-Regular";
 font-size: 18px;
-font-weight: 400;
 line-height: 49.56px;
 margin-left: 3px;
         }
@@ -567,7 +578,7 @@ margin-left: 3px;
 }
 .social{
     position: relative;
-    top:-485px;
+    top:-561px;
     left: 754px;
     display: inline-flex;
 
@@ -587,10 +598,14 @@ margin-left: 3px;
     display: flex;
    align-items: center;
    justify-content: center;
+   position: relative;
+   top: -26px;
+   z-index:1;
 
 }
 .icon-facebook:hover{
-    background-image: url(/asset/img/Facebook-over.png);
+    z-index: -1;
+
    
 }
 .icon-twitter{
@@ -602,6 +617,12 @@ margin-left: 3px;
     display: flex;
    align-items: center;
    justify-content: center;
+   position: relative;
+   top: -26px;
+   
+}
+.icon-twitter:hover{
+    z-index: -1;
 }
 .icon-gplus{
     font-size: 11px;
@@ -612,6 +633,11 @@ margin-left: 3px;
     display: flex;
    align-items: center;
    justify-content: center;
+   position: relative;
+   top: -26px;
+}
+.icon-gplus:hover{
+    z-index: -1;
 }
 .icon-pinterest-1{
     font-size: 11px;
@@ -622,6 +648,12 @@ margin-left: 3px;
     display: flex;
    align-items: center;
    justify-content: center;
+   position: relative;
+   top: -26px;
+
+}
+.icon-pinterest-1:hover{
+    z-index: -1;
 
 }
 .icon-linkedin{
@@ -633,6 +665,11 @@ margin-left: 3px;
     display: flex;
    align-items: center;
    justify-content: center;
+   position: relative;
+   top: -26px;
+}
+.icon-linkedin:hover{
+    z-index: -1;
 }
 .icon-dribbble{
     font-size: 11px;
@@ -643,23 +680,28 @@ margin-left: 3px;
     display: flex;
    align-items: center;
    justify-content: center;  
+   position: relative;
+   top: -26px;
+}
+.icon-dribbble:hover{
+    z-index: -1;
 }
 .in-touch-form{
     margin-left: 122px;
-   
+    margin-top: -36px;
 }
+
 .info-form{
 
-    margin-top: 17px;
     border-style: none;
 }
 .legend{
     font-size: 23pt;
-    position: absolute;
+    position: relative;
     font-family: "MavenPro-Regular";
     color: rgba(224, 224, 224, 255);
-    margin-top: -170px;
-    margin-left: -3px;
+    top: -117px;
+    left: -3px;
     line-height: 4.56px;
 
 }
@@ -670,9 +712,8 @@ margin-left: 3px;
     background-color: #454545;
     border: none;
     color: #bebebe;
-font-family: Lato-Regular;
+font-family: "Lato", sans-serif;
 font-size: 12px;
-font-weight: 400;
 line-height: 21.56px;
 outline:none;
     
@@ -685,17 +726,15 @@ border: none;
 resize: none;
 outline: none;
 color: #bebebe;
-font-family: Lato-Regular;
+font-family: "Lato", sans-serif;
 font-size: 12px;
-font-weight: 400;
 line-height: 38.56px;
 }
 .name{
     margin-top: -111px;
     color: #bebebe;
-font-family: Lato;
+font-family: "Lato" , sans-serif;
 font-size: 12px;
-font-weight: 400;
 line-height: 21.56px;
 }
 .some-info{
@@ -703,12 +742,12 @@ line-height: 21.56px;
 top: 127px;
 left: 722px;
 color: #bebebe;
-width:180px;
+width:181px;
 height: 117px;
-font-family: Lato;
+font-family: "Lato", sans-serif;
 font-size: 12px;
-font-weight: 400;
-line-height: 21.56px;
+line-height: 22.3px;
+word-spacing: 3.6px;
 }
 .contacts{
 position:relative;
@@ -733,26 +772,25 @@ top: -56px;
 
 }
 .contacts-text{
-  width: 121px;
+  width: 122px;
   height: 54px;
   position: relative;
-  left: 21px;
-  top: -3px;
+  left: 22px;
+  top: -5px;
  
   
 }
 .contacts-text p{
     color: #bebebe;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 12px;
-  font-weight: 700;
 line-height: 21.56px; 
 }
 
 .lato-black{
-    font-family: "Lato-Black";
+    font-family: "Lato", sans-serif;
     color: #e0e0e0;
-    font-weight: 900;
+ 
 }
 .left-line-blog{
     border:1px solid #219d84;
@@ -769,4 +807,20 @@ line-height: 21.56px;
     border-width:0px 0px 0px 1px;
     top: -303px;
     left: 920px;
+}
+.up-line-footer{
+    border: 1px solid #2b2b2b;
+    position: relative;
+    width: 960px;
+    border-width: 0px 0px 1px 0px;
+    top: 12px;
+    left: 30px;
+}
+.bottom-line-footer{
+    border: 1px solid #2b2b2b;
+    position: relative;
+    width: 960px;
+    border-width: 0px 0px 1px 0px;
+    top: 53px;
+    left: 30px;
 }
